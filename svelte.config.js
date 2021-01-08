@@ -1,4 +1,4 @@
-const autoPreprocess = require('svelte-preprocess');
+const autoPreprocess = require('svelte-preprocess')
 
 module.exports = {
   preprocess: autoPreprocess({
@@ -9,4 +9,4 @@ module.exports = {
       pretty: true,
     },
   }),
-};
+}

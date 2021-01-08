@@ -1,14 +1,14 @@
-import App from "./App.svelte";
+import App from './App.svelte'
 
 var app = new App({
   target: document.body,
-});
+})
 
-export default app;
+export default app
 
 // The code below enables HMR
 interface ImportMeta {
-  [hot: string]: any;
+  [hot: string]: any
 }
 const meta: ImportMeta = import.meta
 if (meta.hot) {

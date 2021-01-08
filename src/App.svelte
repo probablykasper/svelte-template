@@ -1,15 +1,15 @@
-<script lang='ts'>
-  import {onMount} from 'svelte'
+<script lang="ts">
+  import { onMount } from 'svelte'
   import Counter from './Counter.svelte'
 
-  let count: number = 0;
+  let count: number = 0
   onMount(() => {
-    const interval = setInterval(() => count++, 1000);
-    return () => clearInterval(interval);
-  });
+    const interval = setInterval(() => count++, 1000)
+    return () => clearInterval(interval)
+  })
 </script>
-  
-<style lang='sass'>
+
+<style lang="sass">
   :global(body)
     margin: 0
     font-family: Arial, Helvetica, sans-serif
@@ -26,7 +26,7 @@
       border-radius: 4px
 </style>
 
-<template lang='pug'>
+<template lang="pug">
   main
     h1 Hello world
     p Edit #[code src/Counter.svelte] to trigger HMR
