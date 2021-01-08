@@ -1,6 +1,7 @@
 # Svelte template
 
 Features:
+
 - **Svelte**
 - **TypeScript**
 - **Snowpack** for fast builds
@@ -8,16 +9,18 @@ Features:
 - **Preprocessor support** through `svelte-preprocess`
   - Pug and Sass are installed default
 - **Hot module replacement**
+- **Prettier**
 
 Limitations:
 
 - Sourcemaps are supported for `.ts` and `.svelte` files, but not for the preprocessors used inside `.svelte` files.
-- Linting
+- Linting for code-quality rules is not supported.
 
 ## Recommended VSCode extensions
 
 - `svelte.svelte-vscode` for Svelte
 - `syler.sass-indented` for Sass
+- `esbenp.prettier-vscode` for Prettier
 
 ## Commands
 
@@ -28,3 +31,7 @@ Starts dev server
 ### `npm run build`
 
 Builds and bundles into the `build/` folder
+
+### `npm run lint`
+
+Lint the project

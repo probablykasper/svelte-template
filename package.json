@@ -2,12 +2,15 @@
   "private": true,
   "scripts": {
     "start": "snowpack dev",
-    "build": "snowpack build --clean"
+    "build": "snowpack build --clean",
+    "lint": "prettier --write *.js *.json src public types"
   },
   "devDependencies": {
     "@snowpack/plugin-svelte": "^3.4.1",
     "@snowpack/plugin-typescript": "^1.1.1",
     "@types/snowpack-env": "^2.3.3",
+    "prettier": "^2.2.1",
+    "prettier-plugin-svelte": "^2.0.3",
     "pug": "^3.0.0",
     "sass": "^1.32.2",
     "snowpack": "^2.18.5",
