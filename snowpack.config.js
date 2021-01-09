@@ -7,6 +7,7 @@ module.exports = {
   install: [],
   installOptions: {},
   devOptions: {
+    port: 8080,
     open: 'none',
     output: 'stream', // disable clearing of terminal
   },
