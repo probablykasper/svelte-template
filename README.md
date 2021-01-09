@@ -22,6 +22,17 @@ Limitations:
 - `syler.sass-indented` for Sass
 - `esbenp.prettier-vscode` for Prettier
 
+## Config
+
+With this setup, `src/index.ts` is built and bundled into `public/build/`. If you want more entrypoints, add them to `experiments.optimize.entrypoints` in `snowpack.config.js`.
+
+If you want `src` and `public` to be built and copied to a folder like `dist`:
+
+1. Change the properties `mount` and `buildOptions.out` in `snowpack.config.js`
+2. Update `.gitignore` and the paths `public/index.html`
+
+To disable source maps/`.map` files for builds, disable `buildOptions.sourceMaps` in `snowpack.config.js`.
+
 ## Commands
 
 ### `npm run start`
@@ -30,7 +41,7 @@ Starts dev server
 
 ### `npm run build`
 
-Builds and bundles into the `build/` folder
+Builds and bundles
 
 ### `npm run lint`
 

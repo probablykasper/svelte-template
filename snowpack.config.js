@@ -1,8 +1,7 @@
 /** @type {import("snowpack").SnowpackUserConfig } */
 module.exports = {
   mount: {
-    public: { url: '/', static: true },
-    src: { url: '/dist' },
+    src: { url: '/' },
   },
   plugins: ['@snowpack/plugin-svelte', '@snowpack/plugin-typescript'],
   install: [],
@@ -12,12 +11,13 @@ module.exports = {
     output: 'stream', // disable clearing of terminal
   },
   buildOptions: {
-    out: './build',
+    out: './public/build',
     sourceMaps: true,
   },
   alias: {},
   experiments: {
     optimize: {
+      entrypoints: ['src/index.ts'],
       bundle: true,
     },
   },

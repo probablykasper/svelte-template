@@ -2,7 +2,7 @@
   "private": true,
   "scripts": {
     "start": "snowpack dev",
-    "build": "snowpack build --clean",
+    "build": "snowpack build",
     "lint": "prettier --write *.js *.json src public types"
   },
   "devDependencies": {
