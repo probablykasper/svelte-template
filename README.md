@@ -13,8 +13,8 @@ Features:
 
 Limitations:
 
-- Sourcemaps are supported for `.ts` and `.svelte` files, but not for the preprocessors used inside `.svelte` files.
-- Linting for code-quality rules is not supported.
+- Source maps are supported for `.ts` and `.svelte` files, but not for the preprocessors used inside `.svelte` files
+- Linting for code-quality rules is not supported. Would need to use ESLint with eslint-plugin-svelte3, but that plugin needs to work with svelte-preprocess ([issue](https://github.com/sveltejs/eslint-plugin-svelte3/issues/10))
 
 ## Recommended VSCode extensions
 
@@ -22,16 +22,11 @@ Limitations:
 - `syler.sass-indented` for Sass
 - `esbenp.prettier-vscode` for Prettier
 
-## Config
+## Setup
 
-With this setup, `src/index.ts` is built and bundled into `public/build/`. If you want more entrypoints, add them to `experiments.optimize.entrypoints` in `snowpack.config.js`.
+`src/main.ts` is built and bundled into `build/bundle/`.
 
-If you want `src` and `public` to be built and copied to a folder like `dist`:
-
-1. Change the properties `mount` and `buildOptions.out` in `snowpack.config.js`
-2. Update `.gitignore` and the paths `public/index.html`
-
-To disable source maps/`.map` files for builds, disable `buildOptions.sourceMaps` in `snowpack.config.js`.
+To disable source maps, disable `buildOptions.sourceMaps` in `snowpack.config.js`.
 
 ## Commands
 

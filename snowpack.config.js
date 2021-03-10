@@ -1,7 +1,8 @@
 /** @type {import("snowpack").SnowpackUserConfig } */
 module.exports = {
   mount: {
-    src: { url: '/' },
+    src: { url: '/bundle' },
+    public: { url: '/', static: true },
   },
   plugins: ['@snowpack/plugin-svelte', '@snowpack/plugin-typescript'],
   devOptions: {
@@ -10,19 +11,13 @@ module.exports = {
     output: 'stream', // disable clearing of terminal
   },
   buildOptions: {
-    out: './public/build',
+    out: './build',
     sourcemap: true,
     clean: true,
   },
   optimize: {
-    entrypoints: ['src/index.ts'],
+    entrypoints: ['src/main.ts'],
     bundle: true,
     target: ['chrome64', 'es2020'],
   },
-}
-if (process.env.NODE_ENV === 'development') {
-  module.exports.mount = {
-    src: { url: '/build' },
-    public: { url: '/', static: true },
-  }
 }
