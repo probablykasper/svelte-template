@@ -7,7 +7,7 @@ Features:
 - **Snowpack** for fast builds
   - **esbuild** enabled using `experiments.optimize` setting
 - **Preprocessor support** through `svelte-preprocess`
-  - Pug and Sass are installed default
+  - Pug and Sass are installed by default
 - **Hot module replacement**
 - **Prettier**
 
