@@ -19,5 +19,16 @@
     "svelte-check": "^1.2.4",
     "svelte-preprocess": "^4.6.9",
     "typescript": "^4.2.3"
+  },
+  "prettier": {
+    "printWidth": 100,
+    "semi": false,
+    "singleQuote": true,
+    "htmlWhitespaceSensitivity": "strict",
+    "svelteSortOrder": "options-scripts-styles-markup",
+    "svelteStrictMode": false,
+    "svelteAllowShorthand": true,
+    "svelteBracketNewLine": false,
+    "svelteIndentScriptAndStyle": true
   }
 }
