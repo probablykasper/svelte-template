@@ -12,7 +12,7 @@ module.exports = {
   },
   buildOptions: {
     out: './build',
-    sourcemap: true,
+    sourcemap: process.env.NODE_ENV === 'development',
     clean: true,
   },
   optimize: {

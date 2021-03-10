@@ -26,7 +26,7 @@ Limitations:
 
 `src/main.ts` is built and bundled into `build/bundle/`.
 
-To disable source maps, disable `buildOptions.sourceMaps` in `snowpack.config.js`.
+To disable source maps, disable `buildOptions.sourcemap` in `snowpack.config.js`.
 
 ## Commands
 
