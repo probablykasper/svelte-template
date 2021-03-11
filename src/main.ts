@@ -7,13 +7,22 @@ var app = new App({
 export default app
 
 // The code below enables HMR
-interface ImportMeta {
-  [hot: string]: any
+declare global {
+  interface ImportMeta {
+    hot: {
+      accept: Function
+      dispose: Function
+    }
+    env: {
+      MODE: string
+      SNOWPACK_PUBLIC_API_URL: string
+      SNOWPACK_PUBLIC_IMAGES_URL: string
+    }
+  }
 }
-const meta: ImportMeta = import.meta
-if (meta.hot) {
-  meta.hot.dispose(() => {
+if (import.meta.hot) {
+  import.meta.hot.dispose(() => {
     app.$destroy()
   })
-  meta.hot.accept()
+  import.meta.hot.accept()
 }

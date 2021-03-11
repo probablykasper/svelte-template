@@ -3,11 +3,9 @@
 Features:
 
 - **Svelte**
+- **Snowpack** with **esbuild** enabled
 - **TypeScript**
-- **Snowpack** for fast builds
-  - **esbuild** enabled using `experiments.optimize` setting
-- **Preprocessor support** through `svelte-preprocess`
-  - Pug and Sass are installed by default
+- **`svelte-preprocess` support** with Pug and Sass installed by default
 - **Hot module replacement**
 - **Prettier**
 
@@ -26,8 +24,6 @@ Limitations:
 
 `src/main.ts` is built and bundled into `build/bundle/`.
 
-To disable source maps, disable `buildOptions.sourcemap` in `snowpack.config.js`.
-
 ## Commands
 
 ### `npm run start`
@@ -41,3 +37,7 @@ Builds and bundles
 ### `npm run lint`
 
 Lint the project
+
+### `npm run check`
+
+Run `svelte-check`

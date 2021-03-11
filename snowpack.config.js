@@ -18,6 +18,8 @@ module.exports = {
   optimize: {
     entrypoints: ['src/main.ts'],
     bundle: true,
-    target: ['chrome64', 'es2020'],
+    minify: false,
+    // using targets like es2019 and chrome63 causes warning (https://github.com/snowpackjs/snowpack/issues/2835)
+    target: ['es2020', 'chrome64', 'edge79', 'firefox62', 'safari11.1'],
   },
 }
