@@ -24,6 +24,8 @@ Limitations:
 
 `src/main.ts` is built and bundled into `build/bundle/`.
 
+If you want to add support for Android/iOS/Electron using Capacitor, read [Adding Capacitor to an existing web app](https://capacitorjs.com/docs/getting-started#adding-capacitor-to-an-existing-web-app). Just make sure to set webDir to `"build"` in `capacitor.config.json`.
+
 ## Commands
 
 ### `npm run start`
