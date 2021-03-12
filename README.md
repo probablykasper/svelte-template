@@ -28,18 +28,22 @@ If you want to add support for Android/iOS/Electron using Capacitor, read [Addin
 
 ## Commands
 
-### `npm run start`
+Start dev server:
+```
+npm run start
+```
 
-Starts dev server
+Build and bundle:
+```
+npm run build
+```
 
-### `npm run build`
+Lint the project:
+```
+npm run lint
+```
 
-Builds and bundles
-
-### `npm run lint`
-
-Lint the project
-
-### `npm run check`
-
-Run `svelte-check`
+Run `svelte-check`:
+```
+npm run check
+```
