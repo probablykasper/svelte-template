@@ -1,9 +1,7 @@
 # Svelte template
 
-Features:
-
 - **Svelte**
-- **Snowpack** with **esbuild** enabled
+- **Vite**
 - **TypeScript**
 - **`svelte-preprocess` support** with Pug and Sass installed by default
 - **Hot module replacement**
@@ -11,7 +9,7 @@ Features:
 
 Limitations:
 
-- Source maps are supported for `.ts` and `.svelte` files, but not for the preprocessors used inside `.svelte` files
+- Source maps of `.svelte` files don't support CSS preprocessors ([vite#649](https://github.com/vitejs/vite/issues/649)) and Pug
 - Linting for code-quality rules is not supported. Would need to use ESLint with eslint-plugin-svelte3, but that plugin needs to work with svelte-preprocess ([issue](https://github.com/sveltejs/eslint-plugin-svelte3/issues/10))
 
 ## Recommended VSCode extensions
@@ -30,7 +28,7 @@ If you want to add support for Android/iOS/Electron using Capacitor, read [Addin
 
 Start dev server:
 ```
-npm run start
+npm run dev
 ```
 
 Build and bundle:

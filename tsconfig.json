@@ -1,27 +1,25 @@
 {
-  "include": ["src", "types"],
   "compilerOptions": {
-    "module": "esnext",
     "target": "esnext",
+    "module": "esnext",
     "moduleResolution": "node",
-    "jsx": "preserve",
-    "baseUrl": "./",
 
-    // For snowpack import aliases
-    "paths": {},
+    // require `import type` instead fo `import` for types
+    // svelte-preprocess apparently needs this
+    "importsNotUsedAsValues": "error",
+    "isolatedModules": true,
 
-    // Snowpack will handle emitting/building
-    "noEmit": true,
+    // To have svelte warnings/errors correct position
+    "sourceMap": true,
 
-    // Additional options
+    // Prevent type errors
     "types": ["svelte"],
-    "esModuleInterop": true,
+
     "strict": true,
+    "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
-    "resolveJsonModule": true,
-    "useDefineForClassFields": true,
-    "allowSyntheticDefaultImports": true,
-    "importsNotUsedAsValues": "error"
-  }
+    "baseUrl": "."
+  },
+  "include": ["src/**/*.ts", "src/**/*.svelte"]
 }
