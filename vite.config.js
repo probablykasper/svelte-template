@@ -4,6 +4,7 @@ import sveltePreprocess from 'svelte-preprocess'
 
 export default defineConfig({
   root: './src',
+  base: './', // use relative paths
   publicDir: '../public',
   clearScreen: false,
   build: {
