@@ -10,7 +10,7 @@
 Limitations:
 
 - Source maps of `.svelte` files don't support CSS preprocessors ([vite#649](https://github.com/vitejs/vite/issues/649)) and Pug
-- Linting for code-quality rules is not supported. Would need to use ESLint with eslint-plugin-svelte3, but that plugin needs to work with svelte-preprocess ([issue](https://github.com/sveltejs/eslint-plugin-svelte3/issues/10))
+- Linting for code-quality rules is not supported. Would need to use ESLint with eslint-plugin-svelte3, but that plugin needs to work with svelte-preprocess ([eslint-plugin-svelte3#10](https://github.com/sveltejs/eslint-plugin-svelte3/issues/10))
 
 ## Recommended VSCode extensions
 
