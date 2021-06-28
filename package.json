@@ -24,7 +24,7 @@
     "semi": false,
     "singleQuote": true,
     "htmlWhitespaceSensitivity": "strict",
-    "svelteSortOrder": "options-scripts-styles-markup",
+    "svelteSortOrder": "options-scripts-markup-styles",
     "svelteStrictMode": false,
     "svelteAllowShorthand": true,
     "svelteBracketNewLine": false,
