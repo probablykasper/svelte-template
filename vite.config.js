@@ -16,11 +16,7 @@ export default defineConfig({
   },
   plugins: [
     svelte({
-      preprocess: sveltePreprocess({
-        pug: {
-          pretty: true,
-        },
-      }),
+      preprocess: sveltePreprocess(),
     }),
   ],
 })

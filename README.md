@@ -3,7 +3,7 @@
 - **Svelte**
 - **Vite**
 - **TypeScript**
-- **`svelte-preprocess` support** with Pug and Sass installed by default
+- **`svelte-preprocess` support** with Sass installed by default
 - **Hot module replacement**
 - **Prettier**
 

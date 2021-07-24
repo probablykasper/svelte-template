@@ -9,6 +9,12 @@
   })
 </script>
 
+<main>
+  <h1>Hello world</h1>
+  <p>Edit <code>src/Counter.svelte</code> to trigger HMR</p>
+  <Counter {count} />
+</main>
+
 <style lang="sass">
   :global(body)
     margin: 0
@@ -25,10 +31,3 @@
       padding: 3px 6px
       border-radius: 4px
 </style>
-
-<template lang="pug">
-  main
-    h1 Hello world
-    p Edit #[code src/Counter.svelte] to trigger HMR
-    Counter(count="{count}")
-</template>
