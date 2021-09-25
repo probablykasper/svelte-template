@@ -24,7 +24,6 @@
     color: #ff3700
   code
     background: #282b33
-    // border: 1px solid rgba(#8c99ba, 0.1)
     padding: 2px 5px
     border-radius: 4px
 </style>
